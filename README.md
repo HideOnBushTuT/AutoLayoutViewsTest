@@ -46,7 +46,8 @@
       let preView = views?[index - 1]
       let newView = views?[index]
       newView?.snp.makeConstraints({ (make) in
-          make.bottom.equalToSuperview().offset(-20)                      		make.top.equalTo((preView?.snp.bottom)!).offset(20)
+          make.bottom.equalToSuperview().offset(-20)                      		
+          make.top.equalTo((preView?.snp.bottom)!).offset(20)
           make.centerX.equalToSuperview()
           make.width.equalTo(202)
           make.height.equalTo((preView?.snp.height)!)
@@ -54,7 +55,8 @@
     } else {
           let preview = views?[index - 1]
           let newview = views?[index]
-          newView?.snp.makeConstraints({ (make) in                 	     make.top.equalTo((preView?.snp.bottom)!).offset(20)
+          newView?.snp.makeConstraints({ (make) in                 	     
+          make.top.equalTo((preView?.snp.bottom)!).offset(20)
           make.centerX.equalToSuperview()
           make.height.equalTo((preView?.snp.height)!)
           make.width.equalTo(202)
