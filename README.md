@@ -33,7 +33,7 @@
   * 中间的视图需要和前一个视图有约束。
   * 最后的视图不仅和之前的视图有约束而且还和父视图有约束。
 
-  ```
+  ```swift
   for index in 0..<(view?.count)! {
     if index == 0 {
       let view = views?[index]
